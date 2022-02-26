@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+body, h1,h2,h3,h4,h5,h6,span,p,a, {
+	font-family: 'Work Sans', sans-serif;
+}
+img {
+	max-width: 100%;
+}
+
+section {
+	padding: 40px 0;
+}
+
+input {
+   border: 1px solid #E3E3E4 !important;
+   box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%) !important;
+}
+
+::placeholder {
+	color: #D3D3D3 !important;
+}
+
+:focus {
+	border: 1px solid #6278df !important;
+	box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 30%) !important;	
+}
+
+textarea {
+	font-size: 20px;
+	border: 1px solid #E3E3E4 !important;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%) !important;
+    font-size: 20px !important;
+}
+/*---------------Main CSS-----------------*/
+
+.logo {
+    width: 50px;
+    margin-right: 5px;
+}
+
+.topbar span {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.menu-item {
+	margin-left: 120px;
+}
+
+.topbar-btn {
+	font-weight: 700;
+	color: #6278df;
+	outline: #6278df;
+}
+
+.topbar-btn:hover {
+	box-shadow: 3px 3px 27px -3px #6278df;
+	background: #6278df;
+}
+
+/*-----------Banner CSS------------*/
+
+#header {
+	background: url(Img/mbr-10.jpg) no-repeat center center;
+	position: relative;
+	z-index: 1;
+}
+
+#header::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0, 0.5);
+	z-index: -1;
+}
+
+.banner-taxt {
+	padding: 120px 0;
+	z-index: 2;
+}
+
+.banner-taxt h5 {
+    color: #fff;
+    font-size: 22px;
+}
+
+.banner-taxt h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+
+.banner-from {
+	margin-bottom: 100px;
+}
+
+.banner-btn {
+	padding: 11px;
+	background: #5BA533;
+	font-weight: 600;
+	transition: 0.3;
+}
+
+.banner-btn:hover {
+    background: #fff;
+    color: #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+
+/*--------Counter CSS----------*/
+
+.count {
+    padding: 50px 0;
+}
+
+.count h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.count p {
+    font-size: 20px;
+}
+
+/*---------Benifites CSS-----------*/
+
+#benifites {
+	background: #F7F9FF;
+}
+.benifites-text h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.benifites-text p {
+    font-size: 21px;
+    width: 90%;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.benifites-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*----------------Fetuers CSS----------------*/
+
+.fetuers-text h1 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.fetuers-text p {
+    font-size: 25px;
+    color: #767676;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+}
+
+.fetuers-item{
+	height: 300px;
+	margin-bottom: 30px;
+	box-shadow: 2.5px 4.33px 30px 0 rgba(64 87 191 / 20%);
+	transition: 0.3s;
+}
+
+.fetuers-item:hover {
+	box-shadow: 2.5px 4.33px 30px 0 rgba(64 87 191 / 30%);
+}
+
+.fetuers-img-sec{
+	width: 40%;
+	overflow: hidden;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.fetuers-img-sec img {
+    height: 100%;
+    width: auto;
+    max-width: inherit;
+    position: relative;
+    left: -60px;
+}
+
+.fetuers-text-sec{
+	width: 60%;
+	padding: 20px;
+}
+
+.fetuers-text-sec h4 {
+    font-size: 20px;
+}
+
+.fetuers-text-sec p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/*-------------Application CSS-------------*/
+.application {
+	position: relative;
+	display: block;
+}
+.application::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #6278df;
+	transition: 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.application:hover::after{
+	opacity: 0.6;
+	visibility: visible;
+}
+
+/*---------------------User Plan CSS----------------------*/
+
+
+#user-plan {
+	background: #F7F9FF;
+}
+
+.card-wrapper {
+	box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+	transition: 0.3s;
+}
+
+.card-wrapper:hover {
+	box-shadow: 2.5px 4.33px 30px 0 rgba(64 87 191 / 20%);
+}
+
+.card-text p {
+	font-size: 20px;
+}
+
+.pricing-item{
+	list-style: none;
+	padding: 0;
+}
+.pricing-item li{
+	padding: 10px 0;
+	font-size: 19px;
+	font-weight: 300;
+}
+
+.pricing-item li span {
+    width: 29px;
+    display: inline-block;
+}
+
+.pricing-item li span i {
+    font-size: 22px;
+    color: #6287df;
+}
+
+.card-wrapper:hover .pricing-btn {
+	background: #6278df;
+	color: #fff;
+}
+
+.pricing-btn {
+	background: #fff;
+	color: #6278df;
+	transition: 0.3s;
+	font-weight: 500;
+	letter-spacing: 1.2;
+	box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+}
+
+
+.pricing-btn:hover {
+	background: #000 !important;
+	color: #fff !important;
+}
+
+
+/*------------Feedback CSS--------------*/
+
+.fetuers-text i {
+    font-size: 120px;
+    opacity: 0.07;
+}
+
+.fetuers-text .feedback-p {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.user-img {
+    width: 68px;
+    display: inline-block;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.user-meta {
+    width: 120px;
+    display: inline-block;
+    position: relative;
+    top: -15px;
+}
+
+.user-meta h4 {
+    font-size: 20px;
+    margin-bottom: -5px;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.user-meta span {
+	width: 100%;
+	text-align: left;
+	display: inline-block;
+}
+
+/*-----------------About Section CSS-------------------*/
+
+.about {
+	background: #F7F9FF;
+}
+
+.team-item .card {
+    border: none;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    transition: 0.3s;
+}
+
+.team-item .card:hover {
+    border: none;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 30%);
+}
+
+.team-item .card img {
+    width: 50%;
+    margin-top: -35%;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 25%);
+}
+
+.team-item .card .card-body p {
+    opacity: 0.5;
+}
+
+.team-item .card .card-body .btn {
+	font-weight: 600;
+}
+.team-item .card .card-body .btn:hover {
+	color: #fff;
+	background: #465052;
+}
+
+/*---------------Contuct Section CSS----------------*/
+
+.contuct-btn {
+	background: #6278df;
+	font-weight: 600;
+	transition: 0.3;
+}
+
+.contuct-btn:hover {
+	background: #fff;
+    color: #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+
+/*--------------------Find Apps CSS--------------------*/
+
+.find-apps-btn-apple {
+	border: 1px solid #5BA533;
+	color: #5BA533;
+	font-size: 22px;
+	font-weight: 600;
+	transition: 0.3s;
+}
+
+.find-apps-btn-apple:hover {
+	background: #5BA533;
+	color: #fff;
+	box-shadow: 3px 3px 27px -3px #5ba533;
+}
+
+.find-apps-btn-play {
+	background: #5BA533;
+	color: #fff;
+	font-size: 22px;
+	box-shadow: 3px 3px 27px -3px #5ba533;	
+	font-weight: 600;
+	transition: 0.3s;
+	border: 1px solid #5BA533;
+}
+
+.find-apps-btn-play:hover {
+	border: 1px solid #000;
+	color: #fff;
+	background: #000;
+	box-shadow: none;
+}
+
+.footer-text {
+	font-size: 20px;
+}
